@@ -64,10 +64,14 @@ LOG_LEVEL = 'DEBUG'
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'crawler.pipeline.DownloadPipeline': 300,
-    'crawler.pipeline.MysqlPipeLine': 301,
+    'crawler.pipeline.SBXSubmitPipeline': 301,
+    'crawler.pipeline.MysqlPipeLine': 302,
 }
 
 FILES_STORE = './apk'
+SBX_URL = 'http://10.10.132.9/'
+SBX_API_KEY = 'asdf'
+
 
 DOWNLOAD_MAXSIZE = 100*1024*1024   # 1024m
 DOWNLOAD_WARNSIZE = 100*1024*1024

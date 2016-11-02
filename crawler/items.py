@@ -14,4 +14,6 @@ class CrawlerItem(scrapy.Item):
     apk_name = scrapy.Field()
     apk_url = scrapy.Field()
     apk_version = scrapy.Field()
-    apk_file = scrapy.Field()
+    apk_path = scrapy.Field()
+    task_id = scrapy.Field()
+    status = scrapy.Field()
